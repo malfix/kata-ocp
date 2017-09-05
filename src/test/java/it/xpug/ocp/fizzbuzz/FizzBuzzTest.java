@@ -6,11 +6,11 @@ import org.junit.*;
 
 public class FizzBuzzTest {
 
-	private FizzBuzzGame game;
+	private Game game;
 
 	@Before
 	public void setUp() throws Exception {
-		game = new FizzBuzzGame();
+		game = new GameFactory().create();
 	}
 
 	@Test
